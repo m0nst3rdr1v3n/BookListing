@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40C4FF</color>
+    <color name="colorPrimaryDark">#00B0FF</color>
+    <color name="colorAccent">#80D8FF</color>
+
+    <color name="searchTextColor">#212121</color>
+
+    <!--text color-->
+    <color name="text_color">#000000</color>
+
+</resources>

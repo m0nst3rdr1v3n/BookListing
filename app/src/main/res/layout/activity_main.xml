@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/lin_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/search_topic_hint"
+            android:inputType="text"
+            android:maxLength="20" />
+
+        <Button
+            android:id="@+id/search"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/search_text"
+            android:background="@color/colorPrimary"
+            android:elevation="16dp"
+            android:text="@string/search_text"
+            android:textColor="@color/searchTextColor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin_lay"
+        android:divider="@null"
+        android:orientation="vertical" />
+
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin_lay"
+        android:gravity="center"
+        android:text="@string/book_search"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+
