@@ -74,7 +74,7 @@ public class FetchData extends AsyncTask<String, Void, ArrayList<ResultStrs>> {
 
             Uri builtUri = Uri.parse(BOOKS_BASE_URL).buildUpon()
                     .appendQueryParameter(QUERY_PARAM, params[0])
-                    .appendQueryParameter(KEY, "")
+                    .appendQueryParameter(KEY, "ADD YOUR API KEY HERE")
                     .build();
 
             URL url = new URL(builtUri.toString());
